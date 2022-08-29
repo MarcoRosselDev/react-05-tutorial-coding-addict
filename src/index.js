@@ -6,3 +6,5 @@ function Saludar() {
 }
 
 ReactDOM.render(<Saludar />, document.getElementById('root'));
+
+// rafce crea un react function arrow
