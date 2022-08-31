@@ -17,13 +17,15 @@ function Saludar() {
   );
 }
 
-const Book = () => {
+const Book = (props) => {
+  console.log(props);
   return (
     <article className="book">
       <p>book</p>
       <img src={img} alt="book test url" />
       <h1>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
+      {console.log(props)}
     </article>
   );
 };
