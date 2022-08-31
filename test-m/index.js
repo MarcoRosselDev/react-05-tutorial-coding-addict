@@ -7,4 +7,14 @@ let arrVar = [];
 btnPut.addEventListener("click", function () {
   arrVar.push(ipt.value);
   localStorage.setItem("exampleList", JSON.stringify(arrVar));
+  ipt.value = "";
+  printDom(arrVar);
 });
+
+function printDom(arr) {
+  let printInner = "";
+  for (let i = 0; i < arr.length; i++) {
+    printInner += `<ul>${arr[i]}</ul>`;
+  }
+  list.innerHTML = printInner;
+}
