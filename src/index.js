@@ -12,7 +12,8 @@ const img =
 function Saludar() {
   return (
     <section className="booklist">
-      <Book />
+      <Book job="developer" />
+      <Book title="random title" number={29} />
     </section>
   );
 }
@@ -25,7 +26,6 @@ const Book = (props) => {
       <img src={img} alt="book test url" />
       <h1>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
-      {console.log(props)}
     </article>
   );
 };
