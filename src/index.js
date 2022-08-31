@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
 
 function Saludar() {
   return (
@@ -16,7 +17,7 @@ function Saludar() {
 const Book = () => {
   return (
     <article>
-      this is a cart
+      <p>book</p>
       <Imag />
       <Title />
       <Author />
