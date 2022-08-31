@@ -1,0 +1,17 @@
+* {
+  background-color: rgb(17, 75, 77);
+}
+
+body {
+  text-align: center;
+  color: white;
+}
+
+button {
+  background-color: black;
+  color: aliceblue;
+}
+
+input {
+  background-color: azure;
+}
