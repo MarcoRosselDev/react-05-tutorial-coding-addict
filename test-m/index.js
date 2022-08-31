@@ -24,3 +24,9 @@ function printDom(arr) {
   }
   list.innerHTML = printInner;
 }
+
+btnClean.addEventListener("dblclick", function () {
+  localStorage.clear();
+  arrVar = [];
+  printDom(arrVar);
+});
