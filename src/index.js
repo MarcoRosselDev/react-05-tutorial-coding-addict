@@ -37,7 +37,7 @@ function Saludar() {
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <p>book</p>
       <Imag />
       <Title />
@@ -54,7 +54,11 @@ const Imag = () => (
 );
 
 const Title = () => <h1>The subltle art of not giving a fuch</h1>;
-const Author = () => <h4>Roger Wayne</h4>;
+const Author = () => (
+  <h4 style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}>
+    Roger Wayne
+  </h4>
+);
 
 ReactDOM.render(<Saludar />, document.getElementById("root"));
 
