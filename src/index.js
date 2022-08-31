@@ -1,15 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Saludo from "./testing";
 
 function Saludar() {
   return (
-    <div>
-      <h1>mi primer componente de react</h1>
-      <Saludo />
-    </div>
+    <section>
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 }
+
+const Book = () => {
+  return <article>this is a cart</article>;
+};
 
 ReactDOM.render(<Saludar />, document.getElementById("root"));
 
