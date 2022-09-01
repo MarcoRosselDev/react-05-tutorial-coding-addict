@@ -3,11 +3,18 @@ import ReactDOM from "react-dom";
 
 // CSS
 import "./index.css";
-// setup vars
-const title = "Title: The subltle art of not giving a fuch";
-const author = "Author: Roger Wayne";
-const img =
-  "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51MT0MbpD7L.jpg";
+
+// object books
+const firstBook = {
+  img: "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51MT0MbpD7L.jpg",
+  title: "Title: The subltle art of not giving a fuch",
+  author: "Author: Roger Wayne",
+};
+const secondBook = {
+  img: "https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL127_SR127,127_.jpg",
+  title: "I Love You to the Moon and BackS",
+  author: "Tim Warnes",
+};
 
 function Saludar() {
   return (
