@@ -11,7 +11,7 @@ const firstBook = {
   author: "Author: Roger Wayne",
 };
 const secondBook = {
-  img: "https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL127_SR127,127_.jpg",
+  img: "https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/I/51p2SDOCV9L._SX482_BO1,204,203,200_.jpg",
   title: "I Love You to the Moon and BackS",
   author: "Tim Warnes",
 };
@@ -56,6 +56,6 @@ const Book = ({ img, title, author }) => {
   );
 };
 
-ReactDOM.render(<Saludar />, document.getElementById("root"));
+ReactDOM.render(<Booklist />, document.getElementById("root"));
 
 // rafce crea un react function arrow
