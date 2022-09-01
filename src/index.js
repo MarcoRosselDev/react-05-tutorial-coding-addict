@@ -23,7 +23,16 @@ function Booklist() {
         img={firstBook.img}
         title={firstBook.title}
         author={firstBook.author}
-      />
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minima
+          facere quos dolor consequuntur modi, magnam quibusdam molestiae
+          voluptate commodi fugit, voluptas vitae iste enim totam. Maxime
+          dolorum suscipit sed! Impedit voluptatibus quam hic ut tenetur labore
+          alias necessitatibus debitis officiis nesciunt inventore sit quia,
+          soluta
+        </p>
+      </Book>
       <Book
         img={secondBook.img}
         title={secondBook.title}
@@ -43,13 +52,14 @@ function Saludar() {
 }*/
 
 // los dos son lo mismo
-const Book = ({ img, title, author }) => {
+const Book = ({ img, title, author, children }) => {
   // const { img, title, author } = props; // para no repetir props.img props.title
   // este requiere el props en parametros
   return (
     <article className="book">
       <p>book</p>
       <img src={img} alt="book test url" />
+      {children}
       <h1>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
     </article>
