@@ -18,8 +18,10 @@ function Saludar() {
   );
 }
 
-const Book = (props) => {
-  console.log(props);
+// los dos son lo mismo
+const Book = ({ img, title, author }) => {
+  // const { img, title, author } = props; // para no repetir props.img props.title
+  // este requiere el props en parametros
   return (
     <article className="book">
       <p>book</p>
