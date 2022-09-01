@@ -16,6 +16,23 @@ const secondBook = {
   author: "Tim Warnes",
 };
 
+function Booklist() {
+  return (
+    <section className="booklist">
+      <Book
+        img={firstBook.img}
+        title={firstBook.title}
+        author={firstBook.author}
+      />
+      <Book
+        img={secondBook.img}
+        title={secondBook.title}
+        author={secondBook.author}
+      />
+    </section>
+  );
+}
+/*
 function Saludar() {
   return (
     <section className="booklist">
@@ -23,7 +40,7 @@ function Saludar() {
       <Book title="random title" number={29} />
     </section>
   );
-}
+}*/
 
 // los dos son lo mismo
 const Book = ({ img, title, author }) => {
