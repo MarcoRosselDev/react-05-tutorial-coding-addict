@@ -5,41 +5,25 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 // object books
-const firstBook = {
-  img: "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51MT0MbpD7L.jpg",
-  title: "Title: The subltle art of not giving a fuch",
-  author: "Author: Roger Wayne",
-};
-const secondBook = {
-  img: "https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/I/51p2SDOCV9L._SX482_BO1,204,203,200_.jpg",
-  title: "I Love You to the Moon and BackS",
-  author: "Tim Warnes",
-};
+const books = [
+  {
+    img: "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51MT0MbpD7L.jpg",
+    title: "Title: The subltle art of not giving a fuch",
+    author: "Author: Roger Wayne",
+  },
+  {
+    img: "https://images-na.ssl-images-amazon.com/images/W/WEBP_402378-T2/images/I/51p2SDOCV9L._SX482_BO1,204,203,200_.jpg",
+    title: "I Love You to the Moon and BackS",
+    author: "Tim Warnes",
+  },
+];
+const names = ["marco", "susan", "lusho"];
+const newNames = names.map((name) => {
+  return <h1>{name} </h1>;
+});
 
 function Booklist() {
-  return (
-    <section className="booklist">
-      <Book
-        img={firstBook.img}
-        title={firstBook.title}
-        author={firstBook.author}
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minima
-          facere quos dolor consequuntur modi, magnam quibusdam molestiae
-          voluptate commodi fugit, voluptas vitae iste enim totam. Maxime
-          dolorum suscipit sed! Impedit voluptatibus quam hic ut tenetur labore
-          alias necessitatibus debitis officiis nesciunt inventore sit quia,
-          soluta
-        </p>
-      </Book>
-      <Book
-        img={secondBook.img}
-        title={secondBook.title}
-        author={secondBook.author}
-      />
-    </section>
-  );
+  return <section className="booklist">{newNames} </section>;
 }
 /*
 function Saludar() {
@@ -52,14 +36,13 @@ function Saludar() {
 }*/
 
 // los dos son lo mismo
-const Book = ({ img, title, author, children }) => {
-  // const { img, title, author } = props; // para no repetir props.img props.title
+const Book = (props) => {
+  const { img, title, author } = props; // para no repetir props.img props.title
   // este requiere el props en parametros
   return (
     <article className="book">
       <p>book</p>
       <img src={img} alt="book test url" />
-      {children}
       <h1>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
     </article>
