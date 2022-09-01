@@ -17,13 +17,16 @@ const books = [
     author: "Tim Warnes",
   },
 ];
-const names = ["marco", "susan", "lusho"];
-const newNames = names.map((name) => {
-  return <h1>{name} </h1>;
-});
 
 function Booklist() {
-  return <section className="booklist">{newNames} </section>;
+  return (
+    <section className="booklist">
+      {books.map((book) => {
+        console.log(book);
+        return "wsop";
+      })}
+    </section>
+  );
 }
 /*
 function Saludar() {
