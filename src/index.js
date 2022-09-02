@@ -42,7 +42,12 @@ const Book = ({ img, title, author }) => {
   const clickAlert = () => alert("hello");
   const complexExample = (author) => console.log(author);
   return (
-    <article className="book">
+    <article
+      className="book"
+      onMouseOver={() => {
+        console.log(author);
+      }}
+    >
       <img src={img} alt="book test url" />
       <h1 onClick={() => console.log(title)}>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
